@@ -1,4 +1,12 @@
-import java.util.Scanner;
+/**
+ * @Class: MyAssignment
+ * @Author: Savion Plater
+ * @Course: ITEC2140 - 05, Spring 2023
+ * @Written: March 27, 2023
+ * Description: The program will contain the completed
+ * methods and test them by calling the methods with
+ * appropriate inputs in the main method.
+ */
 public class MyAssignment {
     public String reverseDoubleChar(String word){
         String result = "";
@@ -122,10 +130,40 @@ public class MyAssignment {
         }
     }
 
+    // main method
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        revDouble = input.nextString();
-        return 0;
+        MyAssignment method = new MyAssignment();
+        //output for reverseDoubleChar()
+        System.out.println(method.reverseDoubleChar("Pancakes"));
 
+        //output for sumDigits()
+        System.out.println(method.sumDigits(936));
+
+        //output for birthdayName()
+        System.out.println(method.birthdayName("Savion"));
+
+        //output for missingFront()
+        System.out.println(method.missingFront("Hearts"));
+
+        //output for swapEnds()
+        System.out.println(method.swapEnds("Kingdom"));
+
+        //output for everyOther()
+        System.out.println(method.everyOther("Drowsy"));
+
+        //output for nonStart()
+        System.out.println(method.nonStart("About", "Time"));
+
+        //output for fibonacci()
+        System.out.println(method.fibonacci(13));
+
+        //output for luckySum()
+        System.out.println(method.luckySum(22, 18, 9));
+
+        //output for hasPalindrome()
+        System.out.println(method.hasPalindrome("level"));
+
+        //output for powerOfTwo()
+        System.out.println(method.powerOfTwo(9));
     }
 }
